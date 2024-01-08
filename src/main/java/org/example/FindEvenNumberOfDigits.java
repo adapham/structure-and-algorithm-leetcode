@@ -19,6 +19,14 @@ public class FindEvenNumberOfDigits {
         }
         return count;
     }
-
-
+    //second way
+    public int findNumbers2(int[] nums) {
+        int result = 0;
+        for(int num : nums){
+            if((int)(Math.log10(num)+1) % 2 == 0 ){
+                result++;
+            }
+        }
+        return result;
+    }
 }
